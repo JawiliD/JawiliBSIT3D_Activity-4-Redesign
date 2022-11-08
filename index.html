@@ -10,49 +10,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Activity 4 | Redesign</title>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f30985c93b.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
-    <div class="menuContainer">
-        <div class="menuContainer_icon">
-            <i class="fa-solid fa-window-minimize"></i>
-            <i class="fa-light fa-window-restore"></i>
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="menuContainer_logo">
-            <img src="image/yahooLogo.png">
-            <h3>MESSENGER</h3>
-        </div>
-        <div class="menuContainer_menuBar">
-            <ul>
-                <li><a href="">MESSENGER</a></li>
-                <li><a href="">HELP</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="formContainer">
-        <form action="">
-            <img src="">
-            <input required="required" type="text">
-            <span>Yahoo ID</span>
-            <input required="required" type="password">
-            <span>Password</span>
-            <input type="checkbox" name="remember">Remember my ID & Password
-            <input type="checkbox" name="automatic">Sign In automatically
-            <input type="checkbox" name="invinsible">Sign in as invisible to everyone
-            <button>SIGN IN</button>
-            <label for="language">Language</label>
-                <select name="language" id="language">
-                    <option value="English (US)">English (US)</option>
-                    <option value="Tagalog">Tagalog</option>
-                </select>
-            <a href="">Create new Account</a>
-            <a href="">Forgot your password?</a>                
+<div class="background">
+    <img src="image/background.png">    
+    <div class="background_menuContainer" id="background_menuContainer--gradient">
+            <div class="menuContainer_icon">
+                <ul>
+                    <li><i class="fa-solid fa-window-minimize"></i></li>
+                    <li><i class="fa-light fa-window-restore"></i></li>
+                    <li><i class="fa-solid fa-close"></i></li>
+                </ul>                                      
+            </div>
+            <div class="menuContainer_logo">
+                <img src="image/yahooLogo.png">
+                <h3>MESSENGER</h3>
+            </div>
+            <div class="menuContainer_menuBar">
+                <ul class="menuBar_menu">
+                    <li><a href="">MESSENGER</a></li>
+                    <li><a href="">HELP</a></li>
+                </ul>
+            </div>
+        </div><br>     
+        <div class="formContainer">
+        <form class="formContainer_form" action="">
+            <div class="divLogo">
+                <img class="divLogo_logo--neumorphism" src="image/LOGO.png">
+            </div>            
+            <div class="divInput">
+                <div class="form_idInput">
+                    <input required="required" type="text">
+                    <span>Yahoo ID</span>
+                    <i></i>
+                </div>
+                <div class="form_passwordInput">
+                    <input required="required" type="password">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="remember" value="remember" name="remember">
+                <label for="remember">Remember my ID & Passwords</label><br>
+                <input type="checkbox" id="automatic" value="automatic" name="automatic">
+                <label for="automatic">Sign In automatically</label><br>
+                <input type="checkbox" id="invinsible" value="invinsible" name="invinsible">
+                <label for="invinsible">Sign in as invisible to everyone</label><br><br>
+                </div>                   
+            <div class="otherContent">               
+                <button class="otherContent_button">SIGN IN</button><br><br>
+                <label for="language">Language </label>
+                    <select name="language" id="language">
+                        <option value="English (US)">English (US)</option>
+                        <option value="Tagalog">Tagalog</option>
+                    </select><br><br>
+                <a href="">Create new Account</a><br>
+                <a href="">Forgot your password?</a>  
+            </div>           
+                          
         </form>
     </div>
 
-<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</div> 
+
+
 </body>
 
 </html>

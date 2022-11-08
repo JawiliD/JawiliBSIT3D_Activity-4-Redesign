@@ -60,8 +60,8 @@ body, .background  {
 .menuContainer_logo {
 	width: 40rem;
 	height: 45%;	
-	align-content: center;
 	display: inline-flex;
+	float: left;
 	
 	
 }
@@ -82,10 +82,7 @@ body, .background  {
 .menuContainer_menuBar {
 	margin: 0px;
 	padding: 0rem;
-	float: left;	
-	position: relative;	
-	
-	
+	float: left;		
 }
 .menuBar_menu { 	
  	list-style-type: none; 	
@@ -333,3 +330,4 @@ body, .background  {
 	background-color: #916ed5;
 	color: white;
 }
+

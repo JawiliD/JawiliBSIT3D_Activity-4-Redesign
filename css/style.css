@@ -1,7 +1,7 @@
 html {
 	background-color: dimgrey;
 	line-height: 2.0rem;	
-	font-family: Comic Sans MS;
+	font-family: sans-serif;
 
 }
 
@@ -31,6 +31,7 @@ body, .background  {
 	width: 100%;	
 	z-index: 1;
 	position: absolute;
+	
 
 }
 
@@ -62,6 +63,9 @@ body, .background  {
 	height: 45%;	
 	display: inline-flex;
 	float: left;
+	font-family: Comic Sans MS;
+
+	
 	
 	
 }
@@ -82,7 +86,9 @@ body, .background  {
 .menuContainer_menuBar {
 	margin: 0px;
 	padding: 0rem;
-	float: left;		
+	float: left;
+	
+			
 }
 .menuBar_menu { 	
  	list-style-type: none; 	
@@ -184,8 +190,7 @@ body, .background  {
  	display: block;
  	position: relative;
  	bottom: 2.0rem; 	
- 	padding: 1.0rem;
- 	font-family: Comic Sans MS;
+ 	padding: 1.0rem; 	
  	
  }
 

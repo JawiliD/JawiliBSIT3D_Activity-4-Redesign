@@ -5,12 +5,10 @@ html {
 
 }
 
-body, .background  {
-	width: 1080px;
+body, .background {
+    width: 1080px;
 	height: 1440px;	
 	margin: auto;
-	
-		
 }
 
 .background {
@@ -20,99 +18,79 @@ body, .background  {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	
 }
 
-/*menu Bar */
-
-.background_menuContainer {	
-	height: 15rem;
-	width: 100%;	
+.background_menuContainer {
+    height: 15rem;
+	width: 100%;
+    position: absolute;	
 	z-index: 1;
-	position: absolute;
+    
 	
-
 }
 
 #background_menuContainer--gradient {
-	  background-image: linear-gradient(to top,transparent,#413c5c);
+    background-image: linear-gradient(to top,transparent,#413c5c);
 }
 
 .menuContainer_icon {
-	float: right;
-	padding: .5rem;		
-	width: 15%;
-	height: 20%;
-	font-size: 2.0rem;
-	color: #c38eb8;
-}
-
-.menuContainer_icon ul {
-	padding: 0rem;
-	margin: 0rem;
-	list-style-type: none;
-}
-
-.menuContainer_icon ul li {
-	display: inline-block;
-	margin-right: 1.0rem;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    float: right;
+    margin: 0em 0em;
+    padding: 0em 0em;
+    font-size: 2rem;
 }
 
 .menuContainer_logo {
-	width: 40rem;
-	height: 45%;	
-	display: inline-flex;
-	float: left;
-	font-family: Comic Sans MS;
-
-}
-.menuContainer_logo img {
-	padding: 1.5rem;
-	max-height: 100%;
-	max-width: 250px;
-	
+    width: 30%;
+    height: 30%;
+    position: relative;
+    float: left;
+    padding: 1rem;
 }
 
-.menuContainer_logo h3 {
-	font-size: 2rem;			
+.menuContainer_icon li {
+    padding: 1rem .5rem;
+    margin: 0rem 0rem;
+    color: #c38eb8;
+}
+
+.background_menuContainer h3 {
+    position: relative;
+    float: left;
+    font-size: 2rem;			
 	color: #c38eb8;
-	
-	
+    font-family: Comic Sans MS;
+}
 
+.menuContainer_navbar {
+    display: flex;
+    float: left;
+    position: relative;
+    top: 30%;
+    list-style-type: none;
+    
 }
-.menuContainer_menuBar {
-	margin: 0px;
-	padding: 0rem;
-	float: left;
-	
-			
-}
-.menuBar_menu { 	
- 	list-style-type: none; 	
- 	
- }
- .menuBar_menu li{
- 	display: inline-block;
+
+.menuContainer_navbar li {
+    display: inline-block;
  	padding: 0rem 1.0rem;
  	font-weight: bold;
+}
 
- }
-
- .menuBar_menu a{
- 	color: #c38eb8;
+.menuContainer_navbar li a{
+    color: #c38eb8;
  	text-decoration: none;
  	font-size: 1.5rem;
- 	
- }
- 
- /* form */
+}
 
- .formContainer {
- 	width: 30rem;
+.background_formContainer {
+    width: 30rem;
  	height: 60rem;
  	margin: auto;
- 	display: flex;
- 	justify-items: center; 	
+ 	display: flex;    	
  	position: absolute;
  	top: 20%;
  	background-color: #413c5c;
@@ -121,145 +99,132 @@ body, .background  {
  	place-items: center;
   	overflow: hidden;
   	border-radius: 20px;
-  	box-shadow: 0px 0px 30px 10px #181928;	
-
- }
-
- 
- .formContainer::before {
- 	content: '';
-  	position: absolute;
- 	width: 100px;
- 	background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-  	height: 130%;
-  	animation: rotBGimg 3s linear infinite;
-  	transition: all 0.2s linear;
- }
-
- @keyframes rotBGimg {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+  	box-shadow: 0px 0px 30px 10px #181928;
+    
 }
 
-.formContainer::after {
-  content: '';
-  position: absolute;
-  background: #413c5c;
-  inset: 5px;
-  border-radius: 15px;
+.background_formContainer::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+ from {
+   transform: rotate(0deg);
+ }
+
+ to {
+   transform: rotate(360deg);
+ }
+}
+
+.background_formContainer::after {
+ content: '';
+ position: absolute;
+ background: #413c5c;
+ inset: 5px;
+ border-radius: 15px;
 }  
 
 .formContainer_form { 	
- 	z-index: 1;
- 	position: relative;
- 	font-size: 1.3rem;
- }
+    z-index: 1;    
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;    
+    width: 80%;
+}
 
- .form_divLogo {
- 	position: relative;
- 	bottom: 3.0rem;
-	display: flex;
- 	justify-content: center; 	 	
- 	width: 100%;
- 	height: 200px;	
- 	filter: drop-shadow( 10px 10px 5px #252638); 	
- 	padding: 1.0rem;	
- }
+.form_logo--neumorphism {
+    position: relative; 
+    width: 100%;
+    filter: 
+    drop-shadow( -5px -5px 5px #7252a9) 
+    drop-shadow(10px 10px 10px #252638);       	 	 	
+    	
+    	
+} 
 
- .divLogo_logo--neumorphism {
- 	filter: drop-shadow( -5px -5px 10px #7252a9);
- }
+.form_divInput { 	
+    margin: auto;  
+    width: 80%;
+    
+}
 
- .form_divInput { 	
- 	margin: auto;
- 	margin-top: 2px;
- 	margin-bottom: 0em;
- 	width: 80%;
- 	height: 150px;
- 	display: block;
- 	position: relative;
- 	bottom: 2.0rem; 	
- 	padding: 1.0rem; 	
- 	
- }
+.divInput_idInput, .divInput_passwordInput {
+    width: 100%; 		
+    position: relative;
+    margin: auto;		
+        
+}
 
- .divInput_idInput, .divInput_passwordInput {
- 	width: 100%; 		
- 	position: relative;
- 	margin: auto;		
- 		
- }
-
-  .divInput_passwordInput { 	
- 	margin-top: 3rem;
- 	
- 	
- } 
+ .divInput_passwordInput { 	
+    margin-top: 3rem;
+    
+    
+} 
 
 .divInput_idInput input, .divInput_passwordInput input{
- 	position: relative; 	
-  	width: 100%;
-  	padding: 20px 10px 10px;
-  	background: transparent;
-  	outline: none;
-  	box-shadow: none;
-  	border: none;
- 	color: #23242a;
-  	font-size: 1em;
-  	letter-spacing: 0.05em;
-  	transition: 0.5s;
-  	z-index: 2;
-  	 	
-  	
- }
+    position: relative; 	
+     width: 100%;
+     padding: 20px 10px 10px;
+     background: transparent;
+     outline: none;
+     box-shadow: none;
+     border: none;
+     color: #23242a;
+     font-size: 1em;
+     letter-spacing: 0.05em;
+     transition: 0.5s;
+     z-index: 2;
+          
+     
+}
 
- .divInput_idInput span, .divInput_passwordInput span {
- 	position: absolute;
-  	left: 0;
-  	bottom: .3rem;
-  	padding: 20px 10px 10px;
-  	font-size: 1em;
-  	color: #8f8f8f;
-  	letter-spacing: 00.05em;
-  	transition: 0.5s;
-  	pointer-events: none;
-  	
- }
+.divInput_idInput span, .divInput_passwordInput span {
+    position: absolute;
+     left: 0;
+     bottom: .3rem;
+     padding: 20px 10px 10px;
+     font-size: 1em;
+     color: #8f8f8f;
+     letter-spacing: 00.05em;
+     transition: 0.5s;
+     pointer-events: none;
+     
+}
 
 .divInput_idInput input:valid ~span, .divInput_passwordInput input:valid ~span,
 .divInput_idInput input:focus ~span, .divInput_passwordInput input:focus ~span {
-  color:  #916ed5;
-  transform: translateX(-10px) translateY(-34px);
-  font-size: 0,75em;
+ color:  #916ed5;
+ transform: translateX(-10px) translateY(-34px);
+ font-size: 0,75em;
 
- }
+}
 
- .divInput_idInput i, .divInput_passwordInput i {
- 	position: absolute;
-  	left: 0;
- 	bottom: 0;
-  	width: 100%;
-  	height: 5px;
-  	background:  #916ed5;
-  	border-radius: 10px;
-  	transition: 0.5s;
-  	pointer-events: none;
-  	z-index: 1; 	
-  	
- }
+.divInput_idInput i, .divInput_passwordInput i {
+    position: absolute;
+     left: 0;
+    bottom: 0;
+     width: 100%;
+     height: 5px;
+     background:  #916ed5;
+     border-radius: 10px;
+     transition: 0.5s;
+     pointer-events: none;
+     z-index: 1; 	
+     
+}
 
 
 .divInput_idInput input:valid ~i, .divInput_passwordInput  input:valid ~i,
 .divInput_idInput input:focus ~i, .divInput_passwordInput  input:focus ~i {
-  height: 44px;
+ height: 44px;
 }
-
-
 
 .form_checkbox{
 	width: 90%;
@@ -267,22 +232,18 @@ body, .background  {
 
 }
 
-.form_otherContent{		
-	margin: auto;
-	padding: 0rem;
-	width: 60%;
-	height: 12rem;	
-	text-align: center;
-	
-	
+.form_button {
+    padding: 1rem;
+    margin: auto
 }
 
-.form_otherContent a {
-	text-decoration: none;
-	color: #916ed5;
+.formContainer_form a {
+    margin: auto;
+    text-decoration: none;
+    color: #916ed5;
 }
 
-.otherContent_button {
+.form_button {
 	padding: 0.8em 1.8em;
  	border: 2px solid #916ed5;
 	position: relative;
@@ -297,7 +258,7 @@ body, .background  {
  	color: #916ed5;
 }
 
-.otherContent_button::before {
+.form_button::before {
 	content: '';
  	width: 0;
  	height: 300%;
@@ -311,16 +272,17 @@ body, .background  {
  	z-index: -1;
 }
 
-.otherContent_button:hover::before {
+.form_button:hover::before {
 	width: 105%;
 }
 
-.otherContent_button:hover {
+.form_button:hover {
 	color:  white;
 }
 
-.otherContent select {
-	padding: .3rem;
+.form_language {    
+    padding: .3rem;
+    border-color: aliceblue;
 	border-radius: .3rem;
 	background-color: #916ed5;
 	color: white;

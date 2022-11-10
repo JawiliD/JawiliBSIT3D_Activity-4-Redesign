@@ -16,63 +16,57 @@
 
 <body>
 <div class="background">
-    <img src="image/background.png">    
-    <div class="background_menuContainer" id="background_menuContainer--gradient">
-            <div class="menuContainer_icon">
-                <ul>
-                    <li><i class="fa-solid fa-window-minimize"></i></li>
-                    <li><i class="fa-regular fa-window-restore"></i></li>
-                    <li><i class="fa-solid fa-close"></i></li>
-                </ul>                                      
-            </div>
-            <div class="menuContainer_logo">
-                <img src="image/yahooLogo.png">
-                <h3>MESSENGER</h3>
-            </div>
-            <div class="menuContainer_menuBar">
-                <ul class="menuBar_menu">
-                    <li><a href="">MESSENGER</a></li>
-                    <li><a href="">HELP</a></li>
-                </ul>
-            </div>
-        </div><br>     
-        <div class="formContainer">
-        <form class="formContainer_form" action="">
-            <div class="form_divLogo">
-                <img class="divLogo_logo--neumorphism" src="image/LOGO.png">
-            </div>            
-            <div class="form_divInput">
-                <div class="divInput_idInput">
-                    <input required="required" type="text">
-                    <span>Yahoo ID</span>
-                    <i></i>
-                </div>
-                <div class="divInput_passwordInput">
-                    <input required="required" type="password">
-                    <span>Password</span>
-                    <i></i>
-                </div>
-            </div>
-            <div class="form_checkbox">
-                <input type="checkbox" id="remember" value="remember" name="remember">
-                <label for="remember">Remember my ID & Passwords</label><br>
-                <input type="checkbox" id="automatic" value="automatic" name="automatic">
-                <label for="automatic">Sign In automatically</label><br>
-                <input type="checkbox" id="invinsible" value="invinsible" name="invinsible">
-                <label for="invinsible">Sign in as invisible to everyone</label><br><br>
-                </div>                   
-            <div class="form_otherContent">               
-                <button class="otherContent_button">SIGN IN</button><br><br>
-                <label for="language">Language </label>
-                    <select name="language" id="language">
-                        <option value="English (US)">English (US)</option>
-                        <option value="Tagalog">Tagalog</option>
-                    </select><br><br><br>
-                <a href="">Create new Account</a><br>
-                <a href="">Forgot your password?</a>  
-            </div>           
-                          
-        </form>
+    <img class="background_backgroundImage" src="image/background.png">    
+        <div class="background_menuContainer" id="background_menuContainer--gradient">                
+             <ul class="menuContainer_icon">
+                <li><i class="fa-solid fa-window-minimize"></i></li>
+                <li><i class="fa-regular fa-window-restore"></i></li>
+                <li><i class="fa-solid fa-close"></i></li>
+            </ul>                                            
+            <img class="menuContainer_logo" src="image/yahooLogo.png">
+            <h3>MESSENGER</h3>
+            <ul class="menuContainer_navbar">
+                <li><a href="">MESSENGER</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>                
+        </div>    
+        <div class="background_formContainer">
+            <form class="formContainer_form" action="">            
+                    <img class="form_logo--neumorphism" src="image/LOGO.png"><br>
+                    
+                    <div class="form_divInput">
+                        <div class="divInput_idInput">
+                            <input required="required" type="text">
+                            <span>Yahoo ID</span>
+                            <i></i>
+                        </div>
+                        <div class="divInput_passwordInput">
+                            <input required="required" type="password">
+                            <span>Password</span>
+                            <i></i>
+                        </div>
+                    </div><br>                    
+
+                    <div class="form_checkbox">
+                        <input type="checkbox" id="remember" value="remember" name="remember">
+                        <label for="remember">Remember my ID & Passwords</label><br>
+                        <input type="checkbox" id="automatic" value="automatic" name="automatic">
+                        <label for="automatic">Sign In automatically</label><br>
+                        <input type="checkbox" id="invinsible" value="invinsible" name="invinsible">
+                        <label for="invinsible">Sign in as invisible to everyone</label><br><br>
+                    </div>   
+
+                    <button class="form_button">SIGN IN</button><br>
+
+                    <label for="language">Language </label>
+                        <select class="form_language" name="language" id="language">
+                            <option value="English (US)">English (US)</option>
+                            <option value="Tagalog">Tagalog</option>
+                        </select><br>
+
+                    <a href="">Create new Account</a><br>
+                    <a href="">Forgot your password?</a>                            
+            </form>
     </div>
 
 </div> 

@@ -128,10 +128,11 @@ body, .background {
  background: #413c5c;
  inset: 5px;
  border-radius: 15px;
+ z-index: 2;
 }  
 
 .formContainer_form { 	
-    z-index: 1;    
+    z-index: 3;    
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;    
